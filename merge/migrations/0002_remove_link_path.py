@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pdfupload', '0001_initial'),
+        ('merge', '0001_initial'),
     ]
 
     operations = [
