@@ -70,6 +70,7 @@ header ul li a:hover{
     width:100%;
     height:100%;
     /*display: flex;*/
+    overflow: auto;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -200,3 +201,30 @@ header ul li a:hover{
     z-index: 20000;
     display: none;
 }
+
+/*-------responsive for mobile potraid ---*/
+
+@media only screen and (max-width: 300px) {
+    .pdf-file{
+        box-sizing: border-box;
+        padding:10px;
+        width: calc(100%);
+        height: 175px;
+        display: inline-block;
+    }
+}
+
+
+/*---------responsive for mobile landscape----------*/
+
+@media only screen and (max-width: 600px) {
+    .pdf-file{
+        box-sizing: border-box;
+        padding:20px;
+        width: calc(50%);
+        height: 150px;
+        display: inline-block;
+    }
+}
+
+
