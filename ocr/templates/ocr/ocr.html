@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pdf worker</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link href = "{% static 'css/ocr.css' %}" rel="stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"> </script>
+    <script src = "{% static 'js/ocr.js' %}"></script>
+</head>
+<body>
+    <script>0</script>
+    <header>
+        <div id="logo">
+            <img src="{% static 'img/index.jpg' %}"></img>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </header>
+    <div id="file-upload">
+        <form method="POST" enctype="multipart/form-data" action="" hidden id="file-form">
+        {% csrf_token %}
+        <input type="file" id="file-upload-input" name="files" accept="image/*"/>
+        </form>
+        <div class="image-cnt">
+            <div id="imgnrslt">
+              <div id="image">
+                <img id="img-source" src=""></img>
+              </div>
+              <div id="out-rslt" contenteditable="true">
+              
+              </div>
+            </div>
+        </div>
+        <div id="btn-frame">
+            <input type="button" value="{{ language}} OCR" id="ocr-btn"/>
+            <input type="button" value="+" id="add-file"/>
+            <button id="download-btn" disabled><a>Download</a></button>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>

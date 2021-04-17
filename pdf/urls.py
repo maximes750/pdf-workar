@@ -19,7 +19,8 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-    path('',include('merge.urls'))
+    path('merge/',include('merge.urls')),
+    path('<str:lang>/ocr/',include('ocr.urls'))
 ]
 #if settings.DEBUG:
     #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
