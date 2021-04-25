@@ -1,0 +1,215 @@
+*,html{
+    padding:0px;
+    margin:0px;
+  }
+  body{
+    display:flexbox;
+    flex-direction:column;
+  }
+  
+  
+  
+  header{
+    overflow:auto;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;;
+    background-color: rgb(131, 236, 140);
+  }
+  #logo img{
+    position: absolute;;
+    height: 100%;
+    max-width: 100%;
+    top: 0px;
+  }
+  header ul{
+    text-align: center;
+    float: right;
+    list-style-type: none;
+  }
+  header ul li{
+    display: inline;
+    padding: 5px;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  header ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+  }
+  header ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(85, 21, 145) ;
+    text-decoration-thickness:2px;
+    color: rgb(85, 21, 145);
+  }
+  
+  
+  
+  
+  
+  #file-upload{
+    height:auto;
+    position: relative;
+    width:100%;
+    box-sizing: border-box;
+  }
+  .image-cnt{
+    width:100%;
+    display:block;
+    position: relative;
+    padding:5px;
+    box-sizing: border-box;
+    height: calc(100% - 44px);
+  }
+  #imgnrslt{
+    box-sizing: border-box;
+    border:2px solid green;
+    position: relative;
+    width:100%;
+    height:100%;
+    overflow: auto;
+  }
+  #out-rslt,#image{
+    width: calc(50% - 4px);
+    height: calc(100% - 4px);
+    box-sizing: border-box;
+    border:2px solid darkblue;
+    float: left;
+    padding: 5px;
+    margin: 2px;
+  }
+  #img-source{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #btn-frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #add-file, #ocr-btn, #download-btn{
+    background-color: red;
+    color:white;
+    position: relative;
+    font-size: 36px;
+    padding:0px 10px;
+    margin-left:5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    /*margin-left: calc(50% - 28px);*/
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+    outline:none;
+  }
+  #ocr-btn,#download-btn,#type-btn{
+    padding: 5px !important;
+    font-size: x-large !important;
+    border-radius: 4px !important;
+  }
+  #download-btn a{
+    text-decoration: none;
+    color: white;
+  }
+  #download-btn:disabled{
+    background-color: #bebdbd;
+  }
+  #add-file:hover, #ocr-btn:hover, #download-btn:hover:enabled{
+    background-color:yellow;
+  }
+  #add-file:active, #ocr-btn:active, #download-btn:active:enabled{
+    background-color: green;
+  }
+  
+  
+  #quality-manager{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #inc-btn,#dec-btn{
+    padding:0px 5px;
+    color:white;
+    background-color: red;
+    border:none;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 4px;
+    margin-left:4px;
+  }
+  
+  #out-rslt-cnt{
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #inc-btn:hover,#dec-btn:hover{
+    background-color: yellow;
+  }
+  #inc-btn:active,#dec-btn:active{
+    background-color: green;
+  }
+  #quality-value{
+    margin-left: 4px;
+    width: 42px;  
+    text-align: center;
+    border: 2px solid red;
+    border-radius:4px;
+    outline:none;
+    font-size: 25px;
+    padding:0px 2px;
+  }
+  #quality-value:hover{
+    border:2px solid yellow;
+  }
+  #quality-value:focus{
+    border:2px solid green;
+  }
+  #out-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 4px;
+    overflow: auto;
+    width: 100%;
+    height: 50%;
+  }
+  #out-img img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #out-img-size{
+    font-weight: bold;
+    color:red;
+  }
+  #out-img-size span{
+    color: green !important;
+  }
+  /*-----------------------pdf canvas--------------*/
+  
+  
+  
+  /*-------responsive for mobile potraid ---*/
+  
+  @media only screen and (max-width: 500px) {
+    #out-rslt,#image{
+      width: calc(100% - 4px);
+      height: calc(50% - 4px);
+    }
+  }
+  
+  
+  /*---------responsive for mobile landscape----------*/
+  
+  @media only screen and (min-width: 500px) {
+    
+  }
+  
+  
+  

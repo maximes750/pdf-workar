@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'merge',
-    'ocr'
+    'ocr',
+    'img_compress'
 ]
 
 MIDDLEWARE = [

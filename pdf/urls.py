@@ -20,7 +20,8 @@ from django.urls import path,include
 
 urlpatterns = [
     path('merge/',include('merge.urls')),
-    path('<str:lang>/ocr/',include('ocr.urls'))
+    path('<str:lang>/ocr/',include('ocr.urls')),
+    path('img-compress/',include('img_compress.urls'))
 ]
 #if settings.DEBUG:
     #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

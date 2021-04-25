@@ -15,9 +15,10 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    <link href = "{% static 'css/ocr.css' %}" rel="stylesheet">
+
+    <link href = "{% static 'css/compress.css' %}" rel="stylesheet">
     <script src = "https://code.jquery.com/jquery-1.10.2.js"> </script>
-    <script src = "{% static 'js/ocr.js' %}"></script>
+    <script src = "{% static 'js/compress.js' %}"></script>
 </head>
 <body>
     <script>0</script>
@@ -40,13 +41,24 @@
               <div id="image">
                 <img id="img-source" src=""></img>
               </div>
-              <div id="out-rslt" contenteditable="true">
-              
+              <div id="out-rslt">
+                <div id="out-rslt-cnt">
+                    <div id="quality-manager">
+                        <input type="button" id="dec-btn" value="<"/>
+                        <input type="text" maxlength="3" id="quality-value" value="80"/>
+                        <input type="button" id="inc-btn" value=">"/>
+                    </div>
+                    <div id="out-img">
+                        <img src=""></img>
+                    </div>
+                    <div id="out-img-size">
+                        Image size : <span>20 Kb</span>
+                    </div>
+                </div>
               </div>
             </div>
         </div>
         <div id="btn-frame">
-            <input type="button" value="{{ language}} OCR" id="ocr-btn"/>
             <input type="button" value="+" id="add-file"/>
             <button id="download-btn" disabled><a>Download</a></button>
         </div>
