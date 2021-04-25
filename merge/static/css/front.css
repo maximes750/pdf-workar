@@ -222,7 +222,7 @@ header ul li a:hover{
     }
     #download-btn{
         display: block;
-        margin: 2px auto;
+        margin: auto;
     }
     #add-file{
         display: block;
@@ -230,8 +230,7 @@ header ul li a:hover{
     }
     #merge-btn{
         display: block;
-        margin-top: 2px;
-        margin: auto;
+        margin: 2px auto;
     }
 }
 

@@ -1,6 +1,5 @@
 $(document).ready(function(){
     //for mobile user drage and drop
-    init();
     var doch=$(document).height();
     var headh=$('header').height();
     $('#file-upload').height(doch-headh-20);
@@ -9,6 +8,9 @@ $(document).ready(function(){
     });
     $("#type-frame div span").click(function(){
         $("#chng-span").text($(this).text());
+    });
+    $("#dragndrop-ui").click(function(){
+        init();
     });
 });
 $(function() { 
