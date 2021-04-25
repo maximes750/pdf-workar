@@ -8,3 +8,6 @@ scikit-learn==0.24.1
 sklearn==0.0
 whitenoise==5.2.0
 PyPDF2==1.26.0
+pillow
+io
+mimetypes
