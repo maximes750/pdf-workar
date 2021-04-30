@@ -15,6 +15,16 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+SITE_NAME = 'pdf-centre.herokuapp.com'
+SITE_BASE_ADDRESS = "https://%s/"%(SITE_NAME)
+SITE_WHOLE_ADDRESS = {
+    'home':SITE_BASE_ADDRESS,
+    'service':SITE_BASE_ADDRESS+'service/',
+    'ImageCompress':SITE_BASE_ADDRESS+'img-compress/',
+    'TamilOcr':SITE_BASE_ADDRESS+'tamil/ocr/',
+    'EnglishOcr':SITE_BASE_ADDRESS+'english/ocr/',
+    'merge':SITE_BASE_ADDRESS+'merge/'
+}
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -25,7 +35,7 @@ SECRET_KEY = 'wx27m_fp4gydec#mve9paff8lncq+u3803ur5oy1r&qdi7+_9s'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pdf-centre.herokuapp.com','127.0.0.1','0.0.0.0']
+ALLOWED_HOSTS = [SITE_NAME,'127.0.0.1','0.0.0.0']
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -40,7 +50,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'merge',
     'ocr',
-    'img_compress'
+    'img_compress',
+    'navigation'
 ]
 
 MIDDLEWARE = [

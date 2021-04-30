@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from PyPDF2 import PdfFileMerger, PdfFileReader, PdfFileWriter
 from django.shortcuts import render
 import io
+from django.conf import settings
 
 def merge(request):
     if request.method == 'POST':
@@ -17,7 +18,7 @@ def merge(request):
         response = HttpResponse(out,content_type="application/pdf")
         response['Content-Disposition'] = "attachment; filename=output.pdf"
         return response
-    return render(request, 'merge/index.html')
+    return render(request, 'merge/index.html',settings.SITE_WHOLE_ADDRESS)
 
 def normal_merge(files,values):
     tmp = io.BytesIO()

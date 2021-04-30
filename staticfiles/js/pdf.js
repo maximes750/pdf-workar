@@ -81,6 +81,9 @@ function performAction(i){
 			});
 			}, function (reason) {
 			// PDF loading error
+			alert('we could not able to process password protected or broken pdf file');
+			totalFiles = [];
+			$('#dragndrop-ui').empty();
 			console.error(reason);
 			});
 		};

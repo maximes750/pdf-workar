@@ -17,11 +17,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from navigation import views
 
 urlpatterns = [
     path('merge/',include('merge.urls')),
     path('<str:lang>/ocr/',include('ocr.urls')),
-    path('img-compress/',include('img_compress.urls'))
+    path('img-compress/',include('img_compress.urls')),
+    path('',include('navigation.urls')),
+    path('service/',views.service,name='service')
 ]
 #if settings.DEBUG:
     #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

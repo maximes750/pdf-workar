@@ -1,0 +1,88 @@
+*,html{
+    padding:0px;
+    margin:0px;
+  }
+  body{
+    display:flexbox;
+    flex-direction:column;
+  }
+  
+  
+  
+  header{
+    overflow:auto;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;;
+    background-color: rgb(131, 236, 140);
+  }
+  #logo img{
+    position: absolute;;
+    height: 100%;
+    max-width: 100%;
+    top: 0px;
+  }
+  header ul{
+    text-align: center;
+    float: right;
+    list-style-type: none;
+  }
+  header ul li{
+    display: inline;
+    padding: 5px;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+  }
+  header ul li a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+  }
+  header ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color:rgb(85, 21, 145) ;
+    text-decoration-thickness:2px;
+    color: rgb(85, 21, 145);
+  }
+  
+  
+  
+  
+  
+  #file-upload{
+    height:auto;
+    position: relative;
+    margin:4px;
+    width:calc(100% - 8px);
+    box-sizing: border-box;
+    border:2px solid green;
+  }
+  
+  body p{
+    box-sizing: border-box;
+    padding: 4px;
+    color: purple;
+    font-size: large;
+  }
+
+  #file-upload a{
+    text-decoration: none;
+    color:green;
+    display: block;
+    margin: auto;
+  }
+  
+  #service-catalogue{
+    width: 100%;
+    overflow: auto;
+    padding: 0px 20px;
+  }
+
+  ul li {
+    margin-bottom: 4px;
+  }
+
+  a#service{
+    display: inline !important;
+  }

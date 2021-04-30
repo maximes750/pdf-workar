@@ -24,7 +24,6 @@
     <script src = "{% static 'js/mine.js' %}"></script>
     <script src = "{% static 'js/csrf.js' %}"></script>
     <script src = "{% static 'js/pdf.js' %}"></script>
-    <script src = "{% static 'js/DragDropTouch.js' %}"></script>
 </head>
 <body>
     <script>0</script>
@@ -33,8 +32,8 @@
             <img src="{% static 'img/index.jpg' %}"></img>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="{{home}}">Home</a></li>
+            <li><a href="{{service}}">Services</a></li>
         </ul>
     </header>
     <div id="file-upload">

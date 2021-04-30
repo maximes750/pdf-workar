@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>pdf worker</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'img/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href = "{% static 'css/navigation.css' %}" rel="stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"> </script>
+    <script src = "{% static 'js/navigation.js' %}"></script>
+</head>
+<body>
+    <script>0</script>
+    <header>
+        <div id="logo">
+            <img src="{% static 'img/index.jpg' %}"></img>
+        </div>
+        <ul>
+            <li><a href="{{home}}">Home</a></li>
+            <li><a href="{{service}}">Services</a></li>
+        </ul>
+    </header>
+    <div id="file-upload">
+        <p>Our services are:</p>
+        <div id="service-catalogue">
+            <ul>
+                <li><a href="{{merge}}">Merge</a></li>
+                <li><a href="{{ImageCompress}}">Image Compress</a></li>
+                <li><a href="{{TamilOcr}}">Tamil OCR</a></li>
+                <li><a href="{{EnglishOcr}}">English OCR</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>
