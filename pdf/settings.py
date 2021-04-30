@@ -33,7 +33,7 @@ SITE_WHOLE_ADDRESS = {
 SECRET_KEY = 'wx27m_fp4gydec#mve9paff8lncq+u3803ur5oy1r&qdi7+_9s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [SITE_NAME,'127.0.0.1','0.0.0.0']
 
