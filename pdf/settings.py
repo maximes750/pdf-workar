@@ -15,7 +15,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SITE_NAME = 'pdf-centre.herokuapp.com'
+SITE_NAME = ''
 SITE_BASE_ADDRESS = "https://%s/"%(SITE_NAME)
 SITE_WHOLE_ADDRESS = {
     'home':SITE_BASE_ADDRESS,
